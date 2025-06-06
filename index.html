@@ -4,74 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exploradores del Cosmos - Inicio</title>
-    <!-- MALA PRÁCTICA 1: Estilos CSS dentro del HTML -->
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0c0a1e;
-            color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .header-div {
-            background-color: #1a1a3d;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 3px solid #6c5ce7;
-        }
-        .nav-div a {
-            color: #a7a1e0;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .main-content {
-            padding: 25px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .footer-div {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            background-color: #1a1a3d;
-            font-size: 0.9em;
-        }
-        .planet-card {
-            background: #2c2c54;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- MALA PRÁCTICA 2: Usar <div> en lugar de etiquetas semánticas como <header>, <nav>, <main>, <footer> -->
-    <div class="header-div">
-        <h1>Exploradores del Cosmos</h1>
-        <div class="nav-div">
-            <a href="index.html">Inicio</a>
-            <a href="marte.html">Marte</a>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">COSMOS</a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="marte.html">Marte</a>
+                <a href="jupiter.html">Júpiter</a>
+                <a href="tierra.html">La Tierra</a>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div class="main-content">
-        <h2>Bienvenido al Sistema Solar</h2>
-        <p>Este es un pequeño rincón del universo digital para aprender sobre los fascinantes mundos que orbitan nuestro Sol. La exploración espacial nos revela maravillas y misterios constantemente.</p>
-        
-        <div class="planet-card">
-            <h3>Nuestra Misión</h3>
-            <p>Proveer información clara y concisa sobre nuestros vecinos cósmicos, fomentando la curiosidad y el asombro por la ciencia y el universo.</p>
-            <!-- MALA PRÁCTICA 3: JavaScript dentro del HTML (inline) -->
-            <button onclick="alert('¡Gracias por tu interés en el cosmos!')">¡Muéstrame un saludo!</button>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Un Viaje por el Sistema Solar</h1>
+                <p>Descubre los secretos de nuestros vecinos cósmicos.</p>
+            </div>
+        </section>
+
+        <section class="planet-gallery">
+            <div class="container">
+                <h2 class="gallery-title">Explora los Mundos</h2>
+                <div class="planet-grid">
+                    <!-- Tarjeta para Marte -->
+                    <a href="marte.html" class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1200px-OSIRIS_Mars_true_color.jpg">
+                        <div class="card-content">
+                            <h3>Marte</h3>
+                            <p>El enigmático Planeta Rojo, un mundo de desiertos helados y volcanes gigantescos. ¿Hubo vida allí alguna vez?</p>
+                        </div>
+                    </a>
+
+                    <!-- Tarjeta para Júpiter -->
+                    <a href="jupiter.html" class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Jupiter_in_true_color.jpg" alt="Planeta Júpiter">
+                        <div class="card-content">
+                            <h3>Júpiter</h3>
+                            <p>El gigante gaseoso que domina el sistema solar, con su icónica Gran Mancha Roja y un séquito de lunas.</p>
+                        </div>
+                    </a>
+
+                    <!-- Tarjeta de ejemplo adicional -->
+                    <a href="tierra.html" class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/960px-The_Earth_seen_from_Apollo_17.jpg" alt="La Tierra vista desde el espacio">
+                        <div class="card-content">
+                            <h3>La Tierra</h3>
+                            <p>Nuestro hogar. Un oasis azul y blanco de vida suspendido en la inmensidad del espacio.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Exploradores del Cosmos. V2.0 - Un proyecto mejorado.</p>
         </div>
-    </div>
+    </footer>
 
-    <div class="footer-div">
-        <p>© 2023 Exploradores del Cosmos. Un proyecto para aprender.</p>
-    </div>
-
+    <script src="js/main.js"></script>
 </body>
 </html>

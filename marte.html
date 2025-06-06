@@ -3,81 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exploradores del Cosmos - Marte</title>
-    <!-- MALA PRÁCTICA 1 REPETIDA: Código CSS duplicado en otro archivo -->
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0c0a1e;
-            color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .header-div {
-            background-color: #1a1a3d;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 3px solid #6c5ce7;
-        }
-        .nav-div a {
-            color: #a7a1e0;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .main-content {
-            padding: 25px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .footer-div {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            background-color: #1a1a3d;
-            font-size: 0.9em;
-        }
-        .planet-info {
-            background: #472b2b;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Marte - Exploradores del Cosmos</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- MALA PRÁCTICA 2 REPETIDA: Estructura no semántica -->
-    <div class="header-div">
-        <h1>Exploradores del Cosmos</h1>
-        <div class="nav-div">
-            <a href="index.html">Inicio</a>
-            <a href="marte.html">Marte</a>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">COSMOS</a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="marte.html" class="active">Marte</a>
+                <a href="jupiter.html">Júpiter</a>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div class="main-content">
-        <h2>Marte: El Planeta Rojo</h2>
-        
-        <div class="planet-info">
-            <h3>Datos Curiosos</h3>
-            <ul>
-                <li>Tiene las tormentas de polvo más grandes del sistema solar.</li>
-                <li>Posee dos lunas pequeñas: Fobos y Deimos.</li>
-                <li>Un día en Marte (un "sol") dura 24.6 horas.</li>
-            </ul>
+    <main>
+        <section class="planet-detail-header">
+            <h1>Marte</h1>
+        </section>
+
+        <div class="container">
+            <section class="planet-content">
+                <div class="planet-image">
+                    <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/5367/production/_99315312_nasa.jpg.webp" alt="Superficie de Marte">
+                </div>
+                <div class="planet-info">
+                    <h2>El Planeta Rojo</h2>
+                    <p>Marte es el cuarto planeta en orden de distancia al Sol. Conocido como el "Planeta Rojo" por sus tonos rosados, ha fascinado a la humanidad durante siglos como un posible candidato para albergar vida extraterrestre.</p>
+                    
+                    <h2>Datos Clave</h2>
+                    <ul>
+                        <li><strong>Diámetro:</strong> 6,779 km</li>
+                        <li><strong>Duración del día (Sol):</strong> 24.6 horas</li>
+                        <li><strong>Duración del año:</strong> 687 días terrestres</li>
+                        <li><strong>Lunas:</strong> 2 (Fobos y Deimos)</li>
+                        <li><strong>Característica Principal:</strong> Posee el volcán más grande del sistema solar, el Monte Olimpo.</li>
+                    </ul>
+                </div>
+            </section>
         </div>
+    </main>
 
-        <div class="planet-info">
-            <h3>¿Hay agua en Marte?</h3>
-            <p>Sí, se ha confirmado la presencia de agua helada en los casquetes polares y bajo la superficie. La búsqueda de agua líquida es uno de los principales objetivos de las misiones actuales.</p>
+    <footer>
+        <div class="container">
+            <p>© 2024 Exploradores del Cosmos. V2.0 - Un proyecto mejorado.</p>
         </div>
-    </div>
-
-    <div class="footer-div">
-        <p>© 2023 Exploradores del Cosmos. Un proyecto para aprender.</p>
-    </div>
-
+    </footer>
+    
 </body>
 </html>
